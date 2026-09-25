@@ -6,6 +6,7 @@ function ExternalLink({ className, children }) {
 
 export default function App() {
   return <>
+    <a className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-lime-300 focus:px-4 focus:py-2 focus:text-black" href="#top">Skip to content</a>
     <header className="top shell">
       <a className="brand" href="#top" aria-label="Bakr Matlab, back to top"><span className="brand-mark">B</span><span>BAKR MATLAB</span></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
