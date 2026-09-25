@@ -1,6 +1,8 @@
+import type { ReactNode } from 'react'
+
 const github = 'https://github.com/bakrmatlab'
 
-function ExternalLink({ className, children }) {
+function ExternalLink({ className, children }: { className?: string; children: ReactNode }) {
   return <a className={className} href={github} target="_blank" rel="noopener noreferrer">{children}</a>
 }
 
