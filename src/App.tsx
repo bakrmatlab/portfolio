@@ -40,13 +40,27 @@ export default function App() {
         </div>
       </section>
       <section className="section shell" id="work" aria-labelledby="work-title">
-        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">Work in<br />progress.</h2></div><p className="section-note">I’m building my portfolio as I go. The projects here will grow with the work.</p></div>
-        <ExternalLink className="work-card">
-          <div className="work-copy"><div className="index">Current work / GitHub</div><div><h3>See what I’m<br />building.</h3><p>My GitHub is the best place to explore my code and follow along as new projects take shape.</p><span className="button secondary">View GitHub <span aria-hidden="true">↗</span></span></div></div>
-          <div className="work-visual" aria-hidden="true"><span>&lt;/&gt;</span></div>
-        </ExternalLink>
+        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">Selected<br />work.</h2></div><p className="section-note">A project from interface to data layer. More work will join it here as it takes shape.</p></div>
+        <article className="work-card money-pal-card">
+          <div className="work-copy">
+            <div className="index">01 / Full stack application</div>
+            <div>
+              <h3>MoneyPal</h3>
+              <p>A personal finance app for managing multiple wallets, tracking transactions, and seeing spending insights with real-time updates.</p>
+              <div className="project-tags" aria-label="Technologies used"><span>React</span><span>Vite</span><span>Convex</span><span>Clerk</span><span>Tailwind CSS</span></div>
+              <div className="project-actions">
+                <a className="button primary" href="https://money-pal-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                <a className="button secondary" href="https://github.com/bakrmatlab/MoneyPal" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+          <div className="work-visual money-pal-visual">
+            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>money-pal-wheat.vercel.app</span></div>
+            <div className="preview-window"><iframe title="MoneyPal homepage preview" src="https://money-pal-wheat.vercel.app/" loading="lazy" tabIndex={-1} aria-hidden="true" /></div>
+          </div>
+        </article>
       </section>
-      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">03 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><ExternalLink className="button primary">Find me on GitHub <span aria-hidden="true">↗</span></ExternalLink></section>
+      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">03 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
     </main>
     <footer className="footer shell"><span>© {new Date().getFullYear()} Bakr Matlab</span><span>Computer science / Carleton University</span><a href="#top">Back to top ↑</a></footer>
   </>
