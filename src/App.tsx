@@ -61,7 +61,7 @@ export default function App() {
         </article>
       </section>
       <section className="section shell education-section" id="education" aria-labelledby="education-title">
-        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Education.</h2></div></div>
+        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">The path<br />so far.</h2></div></div>
         <div className="education-grid">
           <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div><ul className="education-points"><li>Problem solving through code and algorithm design</li><li>How networks and operating systems fit together</li><li>Protecting software with security fundamentals</li></ul></div>
           <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div><ul className="education-points"><li>Writing and debugging applications in multiple languages</li><li>Designing data models and working with SQL</li><li>Creating web applications through team development</li></ul></div>
