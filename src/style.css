@@ -31,6 +31,9 @@
 .education-details h3{font-size:17px;line-height:1.25;margin:1px 0 4px;font-weight:600}
 .education-details p{font-size:14px;color:#b9c0b2;margin:0}
 .education-details span{display:block;font-size:12px;color:#929b8e;margin-top:7px}
+.education-points{border-top:1px solid #494d43;margin:18px 0 0 148px;padding:14px 0 0;list-style:none;color:#b9c0b2;font-size:13px;line-height:1.55}
+.education-points li{display:flex;gap:8px;margin-top:5px}
+.education-points li::before{content:'·';color:#dfff43;flex:none}
 @media(max-width:720px){.education-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.education-section{padding:48px 0 62px}.education-card{padding:16px}.education-logo{width:104px;height:54px}.education-card-top{gap:12px}.education-details h3{font-size:15px}}
+@media(max-width:600px){.education-section{padding:48px 0 62px}.education-card{padding:16px}.education-logo{width:104px;height:54px}.education-card-top{gap:12px}.education-details h3{font-size:15px}.education-points{margin-left:0}}
 @media(max-width:360px){.education-card-top{flex-direction:column}.education-logo{width:132px}}

@@ -12,7 +12,6 @@ export default function App() {
     <header className="top shell">
       <a className="brand" href="#top" aria-label="Bakr Matlab, back to top"><span className="brand-mark">B</span><span>BAKR MATLAB</span></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
-      <div className="top-status mono"><span className="dot" /> CARLETON UNIVERSITY</div>
     </header>
     <main id="top">
       <section className="hero shell" aria-labelledby="hero-title">
@@ -67,8 +66,8 @@ export default function App() {
       <section className="section shell education-section" id="education" aria-labelledby="education-title">
         <div className="education-heading"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z" /><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5" /></svg><h2 id="education-title">Education</h2></div>
         <div className="education-grid">
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div></div>
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin.png" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div></div>
+          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div><ul className="education-points"><li>Problem solving through code and algorithm design</li><li>How networks and operating systems fit together</li><li>Protecting software with security fundamentals</li></ul></div>
+          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div><ul className="education-points"><li>Writing and debugging applications in multiple languages</li><li>Designing data models and working with SQL</li><li>Creating web applications through team development</li></ul></div>
         </div>
       </section>
       <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
