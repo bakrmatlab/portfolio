@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
 const github = 'https://github.com/bakrmatlab'
+const tickerItems = ['FULL STACK DEVELOPMENT', 'FRONT END TO BACK END', 'ALWAYS BUILDING']
 
 function ExternalLink({ className, children }: { className?: string; children: ReactNode }) {
   return <a className={className} href={github} target="_blank" rel="noopener noreferrer">{children}</a>
@@ -26,7 +27,7 @@ export default function App() {
         </div>
         <div className="hero-art" aria-hidden="true"><div className="art-label">BM / 001 / PORTFOLIO</div><div className="orb" /><div className="art-number">B</div><div className="corner">DESIGNED TO KEEP EVOLVING / 2026</div></div>
       </section>
-      <div className="ticker" aria-hidden="true"><div className="ticker-inner"><span>FULL STACK DEVELOPMENT</span><span>FRONT END TO BACK END</span><span>ALWAYS BUILDING</span><span>FULL STACK DEVELOPMENT</span><span>FRONT END TO BACK END</span></div></div>
+      <div className="ticker" aria-hidden="true"><div className="ticker-inner">{[0, 1].map(group => <div className="ticker-group" key={group}>{Array.from({ length: 4 }, (_, repeat) => tickerItems.map((item, index) => <span key={`${repeat}-${index}`}>{item}</span>))}</div>)}</div></div>
       <section className="section shell" id="about" aria-labelledby="about-title">
         <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">The short<br />version.</h2></div></div>
         <div className="about-grid">
@@ -54,12 +55,8 @@ export default function App() {
             </div>
           </div>
           <div className="work-visual money-pal-visual">
-            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>MoneyPal / visual overview</span></div>
-            <div className="preview-window" aria-hidden="true">
-              <div className="preview-site-header"><span className="preview-logo">$</span><strong>MoneyPal</strong><span className="preview-pill">Get Started</span></div>
-              <div className="preview-site-body"><span className="preview-kicker">PERSONAL FINANCE, SIMPLIFIED</span><div className="preview-title">Your money.<br /><em>In focus.</em></div><div className="preview-caption">Wallets, transactions, and insights in one place.</div><div className="preview-cta">Explore MoneyPal ↗</div></div>
-              <div className="preview-orbit preview-orbit-one" /><div className="preview-orbit preview-orbit-two" />
-            </div>
+            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>MoneyPal / live homepage</span></div>
+            <div className="preview-window"><img src="/moneypal-homepage.jpg" alt="Screenshot of the MoneyPal homepage" loading="lazy" /></div>
           </div>
         </article>
       </section>
