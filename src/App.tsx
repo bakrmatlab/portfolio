@@ -64,7 +64,14 @@ export default function App() {
           </div>
         </article>
       </section>
-      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">03 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
+      <section className="section shell" id="education" aria-labelledby="education-title">
+        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Education.</h2></div></div>
+        <div className="education-card">
+          <div className="education-symbol" aria-hidden="true">CU<span>↗</span></div>
+          <div className="education-details"><div className="index">Current studies</div><h3>Carleton University</h3><p>Computer Science student</p><p className="education-note">Learning the foundations of software development and putting them into practice through full stack projects.</p></div>
+        </div>
+      </section>
+      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
     </main>
     <footer className="footer shell"><span>© {new Date().getFullYear()} Bakr Matlab</span><span>Computer science / Carleton University</span><a href="#top">Back to top ↑</a></footer>
   </>
