@@ -64,11 +64,11 @@ export default function App() {
           </div>
         </article>
       </section>
-      <section className="section shell" id="education" aria-labelledby="education-title">
-        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Education.</h2></div></div>
+      <section className="section shell education-section" id="education" aria-labelledby="education-title">
+        <div className="education-heading"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z" /><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5" /></svg><h2 id="education-title">Education</h2></div>
         <div className="education-card">
-          <div className="education-symbol" aria-hidden="true">CU<span>↗</span></div>
-          <div className="education-details"><div className="index">Current studies</div><h3>Carleton University</h3><p>Computer Science student</p><p className="education-note">Learning the foundations of software development and putting them into practice through full stack projects.</p></div>
+          <div className="education-card-top"><div className="education-logo" aria-hidden="true">Carleton<span>University</span></div><div className="education-details"><h3>Carleton University</h3><p>Computer Science</p><span>Current student</span></div></div>
+          <ul className="education-points"><li>Focused on full stack development</li><li>Applying my studies through projects like MoneyPal</li></ul>
         </div>
       </section>
       <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
