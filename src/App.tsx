@@ -55,8 +55,12 @@ export default function App() {
             </div>
           </div>
           <div className="work-visual money-pal-visual">
-            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>money-pal-wheat.vercel.app</span></div>
-            <div className="preview-window"><iframe title="MoneyPal homepage preview" src="https://money-pal-wheat.vercel.app/" loading="lazy" tabIndex={-1} aria-hidden="true" /></div>
+            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>MoneyPal / visual overview</span></div>
+            <div className="preview-window" aria-hidden="true">
+              <div className="preview-site-header"><span className="preview-logo">$</span><strong>MoneyPal</strong><span className="preview-pill">Get Started</span></div>
+              <div className="preview-site-body"><span className="preview-kicker">PERSONAL FINANCE, SIMPLIFIED</span><div className="preview-title">Your money.<br /><em>In focus.</em></div><div className="preview-caption">Wallets, transactions, and insights in one place.</div><div className="preview-cta">Explore MoneyPal ↗</div></div>
+              <div className="preview-orbit preview-orbit-one" /><div className="preview-orbit preview-orbit-two" />
+            </div>
           </div>
         </article>
       </section>
