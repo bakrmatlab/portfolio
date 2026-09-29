@@ -1,7 +1,20 @@
 import type { ReactNode } from 'react'
 
 const github = 'https://github.com/bakrmatlab'
-const tickerItems = ['FULL STACK DEVELOPMENT', 'FRONT END TO BACK END', 'ALWAYS BUILDING']
+const tickerItems = ['SOFTWARE DEVELOPMENT', 'SYSTEMS & SECURITY', 'ALWAYS LEARNING']
+
+type IconName = 'school' | 'code' | 'github' | 'mail' | 'linkedin'
+
+function Icon({ name }: { name: IconName }) {
+  const paths: Record<IconName, ReactNode> = {
+    school: <><path d="m2 9 10-5 10 5-10 5-10-5Z" /><path d="M6 11v5c0 2 3 4 6 4s6-2 6-4v-5M22 9v7" /></>,
+    code: <><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></>,
+    github: <><path d="M9 19c-4 1-4-2-6-2m12 4v-3.2a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6A4.7 4.7 0 0 0 18.4 6 4.3 4.3 0 0 0 18.3 3S17 2.7 15 4.3a11 11 0 0 0-6 0C7 2.7 5.7 3 5.7 3A4.3 4.3 0 0 0 5.6 6a4.7 4.7 0 0 0-1.3 3.5c0 4.7 2.8 5.7 5.5 6A3 3 0 0 0 9 17.8V21" /></>,
+    mail: <><rect x="2" y="5" width="20" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></>,
+    linkedin: <><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7m0-10v.1M11 17v-7h3v1a3 3 0 0 1 5 2.5V17" /></>,
+  }
+  return <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>
+}
 
 function ExternalLink({ className, children }: { className?: string; children: ReactNode }) {
   return <a className={className} href={github} target="_blank" rel="noopener noreferrer">{children}</a>
@@ -17,36 +30,36 @@ export default function App() {
     <main id="top">
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <div className="eyebrow">Computer science student / Carleton University</div>
+          <div className="eyebrow">Computer science student at Carleton</div>
           <h1 id="hero-title"><span>Bakr</span><span className="outline">Matlab</span></h1>
-          <p className="intro">I’m a computer science student at <strong>Carleton University</strong> interested in building things from front end to back end.</p>
+          <p className="intro">I’m a computer science student who likes solving problems with software. I’ve built web apps, and I’m curious about systems, security, and what I can learn next.</p>
           <div className="actions">
-            <ExternalLink className="button primary">Explore my GitHub <span aria-hidden="true">↗</span></ExternalLink>
-            <a className="button secondary" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
+            <a className="button primary" href="#work">See my work <span aria-hidden="true">↓</span></a>
+            <ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink>
           </div>
         </div>
-        <div className="hero-art" aria-hidden="true"><div className="art-label">BM / 001 / PORTFOLIO</div><div className="orb" /><div className="art-number">B</div><div className="corner">DESIGNED TO KEEP EVOLVING / 2026</div></div>
+        <div className="hero-art" aria-hidden="true"><div className="art-label">BAKR MATLAB / PORTFOLIO</div><div className="orb" /><div className="art-number">B</div><div className="corner">OTTAWA, CANADA / 2026</div></div>
       </section>
       <div className="ticker" aria-hidden="true"><div className="ticker-inner">{[0, 1].map(group => <div className="ticker-group" key={group}>{Array.from({ length: 4 }, (_, repeat) => tickerItems.map((item, index) => <span key={`${repeat}-${index}`}>{item}</span>))}</div>)}</div></div>
       <section className="section shell" id="about" aria-labelledby="about-title">
-        <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">The short<br />version.</h2></div></div>
+        <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">A little<br />about me.</h2></div></div>
         <div className="about-grid">
-          <p className="about-copy">I’m Bakr, a computer science student at Carleton University. I’m drawn to <em>full stack development</em>—the mix of thoughtful interfaces and the systems that make them work.</p>
+          <p className="about-copy">I’m Bakr. I study computer science at Carleton in the cybersecurity stream. My interests are broad: <em>building applications</em>, working with data, and understanding the systems they run on.</p>
           <div className="fact-list">
-            <div className="fact"><span>Based at</span><span>Carleton University</span></div>
-            <div className="fact"><span>Focus</span><span>Full stack development</span></div>
-            <div className="fact"><span>Find me</span><span><ExternalLink>GitHub ↗</ExternalLink></span></div>
+            <div className="fact"><span><Icon name="school" /> Studying</span><span>Computer science at Carleton</span></div>
+            <div className="fact"><span><Icon name="code" /> Interests</span><span>Software, systems, and security</span></div>
+            <div className="fact"><span><Icon name="github" /> Code</span><span><ExternalLink>See my GitHub ↗</ExternalLink></span></div>
           </div>
         </div>
       </section>
       <section className="section shell" id="work" aria-labelledby="work-title">
-        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">Selected<br />work.</h2></div><p className="section-note">A project from interface to data layer. More work will join it here as it takes shape.</p></div>
+        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">What I’ve<br />built.</h2></div><p className="section-note">A closer look at one project I’ve taken from idea to working app.</p></div>
         <article className="work-card money-pal-card">
           <div className="work-copy">
-            <div className="index">01 / Full stack application</div>
+            <div className="index">01 / Personal project</div>
             <div>
               <h3>MoneyPal</h3>
-              <p>A personal finance app for managing multiple wallets, tracking transactions, and seeing spending insights with real-time updates.</p>
+              <p>Keep wallets and transactions in one place, then see where the money goes. I built MoneyPal with React, Convex, and Clerk, including live data updates and sign in.</p>
               <div className="project-tags" aria-label="Technologies used"><span>React</span><span>Vite</span><span>Convex</span><span>Clerk</span><span>Tailwind CSS</span></div>
               <div className="project-actions">
                 <a className="button primary" href="https://money-pal-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
@@ -61,14 +74,14 @@ export default function App() {
         </article>
       </section>
       <section className="section shell education-section" id="education" aria-labelledby="education-title">
-        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">The path<br />so far.</h2></div></div>
+        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Where I’ve<br />studied.</h2></div></div>
         <div className="education-grid">
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div><ul className="education-points"><li>Problem solving through code and algorithm design</li><li>How networks and operating systems fit together</li><li>Protecting software with security fundamentals</li></ul></div>
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div><ul className="education-points"><li>Writing and debugging applications in multiple languages</li><li>Designing data models and working with SQL</li><li>Creating web applications through team development</li></ul></div>
+          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div><ul className="education-points"><li>Algorithms and problem solving</li><li>Networks and operating systems</li><li>Software security fundamentals</li></ul></div>
+          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div><ul className="education-points"><li>Application development and debugging</li><li>SQL and database design</li><li>Team web development projects</li></ul></div>
         </div>
       </section>
-      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Connect</div><h2 id="contact-title">Let’s<br />connect.</h2></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com">Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary">GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
+      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Contact</div><h2 id="contact-title">Say<br />hello.</h2><p className="contact-note">Have a project or a question? I’d like to hear from you.</p></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com"><Icon name="mail" /> Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
     </main>
-    <footer className="footer shell"><span>© {new Date().getFullYear()} Bakr Matlab</span><span>Computer science / Carleton University</span><a href="#top">Back to top ↑</a></footer>
+    <footer className="footer shell"><span>© {new Date().getFullYear()} Bakr Matlab</span><span>Built by Bakr</span><a href="#top">Back to top ↑</a></footer>
   </>
 }

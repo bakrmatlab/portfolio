@@ -34,3 +34,10 @@
   .top{height:auto;min-height:68px;flex-wrap:wrap;padding:18px 0;gap:18px}
   .top nav{width:100%;justify-content:space-between;gap:8px;font-size:11px}
 }
+
+.icon{width:18px;height:18px;flex:none}
+.fact span:first-child{display:inline-flex;align-items:center;gap:10px}
+.fact .icon{width:17px;height:17px;color:#dfff43}
+.button .icon{width:17px;height:17px;margin-right:-22px}
+.contact-note{max-width:440px;color:#b9c0b2;font-size:17px;line-height:1.5;margin:24px 0 0}
+@media(max-width:600px){.button .icon{margin-right:-18px}}
