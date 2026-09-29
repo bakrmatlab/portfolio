@@ -19,7 +19,7 @@
 .education-card{min-width:0;padding:28px;border:1px solid #494d43;background:#1a1d1b;display:flex;flex-direction:column;gap:36px;transition:border-color .2s}
 .education-card:hover{border-color:#dfff43}
 .education-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
-.education-logo{width:112px;height:46px;flex:none;display:grid;place-items:center;background:#fff;overflow:hidden;padding:5px}
+.education-logo{width:136px;height:56px;flex:none;display:grid;place-items:center;background:#fff;overflow:hidden;padding:5px}
 .education-logo img{display:block;width:100%;height:100%;object-fit:contain}
 .education-details h3{font-size:clamp(23px,2.4vw,34px);line-height:1.1;letter-spacing:-.05em;margin:0 0 10px;font-weight:600}
 .education-details p{font-size:16px;color:#b9c0b2;margin:0;line-height:1.45}
@@ -27,7 +27,7 @@
 .education-card-bottom{border-top:1px solid #494d43;padding-top:16px;display:flex;justify-content:space-between;gap:16px;font:12px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em;color:#929b8e}
 .education-card-bottom span{color:#dfff43}
 @media(max-width:720px){.education-grid{grid-template-columns:1fr}.education-card{gap:26px}}
-@media(max-width:600px){.education-card{padding:20px}.education-logo{width:96px;height:42px}.education-details h3{font-size:25px}.education-card-bottom{flex-wrap:wrap}}
+@media(max-width:600px){.education-card{padding:20px}.education-logo{width:116px;height:48px}.education-details h3{font-size:25px}.education-card-bottom{flex-wrap:wrap}}
 
 @media(max-width:600px){
   .top{height:auto;min-height:68px;flex-wrap:wrap;padding:18px 0;gap:18px}
