@@ -31,7 +31,10 @@
 
 @media(max-width:600px){
   .top{height:auto;min-height:68px;flex-wrap:wrap;padding:18px 0;gap:18px}
-  .top nav{width:100%;justify-content:space-between;gap:8px;font-size:11px}
+  .top nav{width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;font-size:12px;letter-spacing:.03em}
+  .top nav a{grid-column:span 2;min-height:44px;border:1px solid #494d43;display:flex;align-items:center;justify-content:center}
+  .top nav a:nth-child(n+4){grid-column:span 3}
+  .top nav a:hover{border-color:#dfff43}
 }
 
 .icon{width:18px;height:18px;flex:none}

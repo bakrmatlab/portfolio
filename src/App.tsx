@@ -78,13 +78,13 @@ export default function App() {
         <div className="education-grid">
           <article className="education-card">
             <div className="education-card-top"><span className="index">01 / University</span><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div></div>
-            <div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science <span>· Cybersecurity stream</span></p></div>
-            <div className="education-card-bottom"><span>Current</span><time>Sep 2025 – Apr 2029</time></div>
+            <div className="education-details"><h3>Carleton University</h3><p>Bachelor of Computer Science <span>· Cybersecurity stream</span></p></div>
+            <div className="education-card-bottom"><span>Current</span><span>Expected Apr 2029</span></div>
           </article>
           <article className="education-card">
             <div className="education-card-top"><span className="index">02 / College</span><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div></div>
-            <div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p></div>
-            <div className="education-card-bottom"><span>Completed</span><time>Sep 2021 – Apr 2023</time></div>
+            <div className="education-details"><h3>Algonquin College</h3><p>Computer Programming Diploma</p></div>
+            <div className="education-card-bottom"><span>Completed</span><span>Apr 2023</span></div>
           </article>
         </div>
       </section>
