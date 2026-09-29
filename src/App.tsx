@@ -32,7 +32,7 @@ export default function App() {
         <div className="hero-copy">
           <div className="eyebrow">Computer science student at Carleton</div>
           <h1 id="hero-title"><span>Bakr</span><span className="outline">Matlab</span></h1>
-          <p className="intro">I’m a computer science student who likes solving problems with software. I’ve built web apps, and I’m curious about systems, security, and what I can learn next.</p>
+          <p className="intro">I learn best by building. I’m studying computer science and making projects that let me explore different parts of software.</p>
           <div className="actions">
             <a className="button primary" href="#work">See my work <span aria-hidden="true">↓</span></a>
             <ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink>
@@ -44,7 +44,7 @@ export default function App() {
       <section className="section shell" id="about" aria-labelledby="about-title">
         <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">A little<br />about me.</h2></div></div>
         <div className="about-grid">
-          <p className="about-copy">I’m Bakr. I study computer science at Carleton in the cybersecurity stream. My interests are broad: <em>building applications</em>, working with data, and understanding the systems they run on.</p>
+          <p className="about-copy">I started in Computer Programming at Algonquin, where I worked with applications and databases. Now I’m in Carleton’s cybersecurity stream. Projects like <em>MoneyPal</em> give me room to put what I learn into practice.</p>
           <div className="fact-list">
             <div className="fact"><span><Icon name="school" /> Studying</span><span>Computer science at Carleton</span></div>
             <div className="fact"><span><Icon name="code" /> Interests</span><span>Software, systems, and security</span></div>
