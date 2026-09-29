@@ -76,8 +76,16 @@ export default function App() {
       <section className="section shell education-section" id="education" aria-labelledby="education-title">
         <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Where I’ve<br />studied.</h2></div></div>
         <div className="education-grid">
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div><div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science — Cybersecurity stream</p><span>Sep 2025 – Apr 2029</span></div></div><ul className="education-points"><li>Algorithms and problem solving</li><li>Networks and operating systems</li><li>Software security fundamentals</li></ul></div>
-          <div className="education-card"><div className="education-card-top"><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div><div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p><span>Sep 2021 – Apr 2023</span></div></div><ul className="education-points"><li>Application development and debugging</li><li>SQL and database design</li><li>Team web development projects</li></ul></div>
+          <article className="education-card">
+            <div className="education-card-top"><span className="index">01 / University</span><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div></div>
+            <div className="education-details"><h3>Carleton University</h3><p>BSc Computer Science <span>· Cybersecurity stream</span></p></div>
+            <div className="education-card-bottom"><span>Current</span><time>Sep 2025 – Apr 2029</time></div>
+          </article>
+          <article className="education-card">
+            <div className="education-card-top"><span className="index">02 / College</span><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div></div>
+            <div className="education-details"><h3>Algonquin College</h3><p>Computer Programming</p></div>
+            <div className="education-card-bottom"><span>Completed</span><time>Sep 2021 – Apr 2023</time></div>
+          </article>
         </div>
       </section>
       <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">04 / Contact</div><h2 id="contact-title">Say<br />hello.</h2><p className="contact-note">Have a project or a question? I’d like to hear from you.</p></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com"><Icon name="mail" /> Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
