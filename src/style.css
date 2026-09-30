@@ -51,3 +51,31 @@
 .button .icon{width:17px;height:17px;margin-right:-22px}
 .contact-note{max-width:440px;color:#b9c0b2;font-size:17px;line-height:1.5;margin:24px 0 0}
 @media(max-width:600px){.button .icon{margin-right:-18px}}
+
+/* Shared rhythm and responsive alignment */
+.section{padding-block:clamp(72px,8vw,112px)}
+.section-head{margin-bottom:clamp(36px,4.5vw,56px)}
+.section-note{margin-top:24px}
+.about-grid{grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);gap:clamp(40px,6vw,96px);align-items:start}
+.fact:first-child{padding-top:0}
+.skill-group{padding-bottom:4px}
+.skill-group h3{margin:0;font-weight:400}
+.skill-group ul{margin-top:22px}
+.education-card{gap:clamp(24px,3vw,36px)}
+.contact{align-items:center}
+.contact-links{max-width:440px}
+.contact-links .button{margin:0}
+.button:focus-visible,nav a:focus-visible,.brand:focus-visible,.footer a:focus-visible,.fact a:focus-visible{outline:2px solid #dfff43;outline-offset:4px}
+@media(max-width:1000px){
+  .contact{display:block}
+  .contact-links{max-width:none;justify-content:flex-start;margin-top:36px}
+}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:36px}.about-copy{max-width:780px}}
+@media(max-width:600px){
+  .section{padding-block:72px}
+  .section-head{margin-bottom:36px}
+  .section h2{font-size:clamp(48px,13vw,72px)}
+  .contact-links{margin-top:30px}
+  .contact-links .button{min-width:150px}
+}
+@media(max-width:380px){.contact-links .button{width:100%}}

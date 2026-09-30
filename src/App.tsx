@@ -31,7 +31,7 @@ export default function App() {
     <a className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-lime-300 focus:px-4 focus:py-2 focus:text-black" href="#top">Skip to content</a>
     <header className="top shell">
       <a className="brand" href="#top" aria-label="Bakr Matlab, back to top"><span className="brand-mark">B</span><span>BAKR MATLAB</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a href="/Bakr_Matlab_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="/Bakr_Matlab_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></nav>
     </header>
     <main id="top">
       <section className="hero shell" aria-labelledby="hero-title">
@@ -79,17 +79,8 @@ export default function App() {
           </div>
         </article>
       </section>
-      <section className="section shell" id="skills" aria-labelledby="skills-title">
-        <div className="section-head"><div><div className="index">03 / Skills</div><h2 id="skills-title">Skills &amp;<br />tools.</h2></div><p className="section-note">Technologies I’ve used in projects, coursework, and work.</p></div>
-        <div className="skills-grid">
-          {skillGroups.map(({ title, items }, index) => <div className="skill-group" key={title}>
-            <div className="skill-group-head"><span className="index">0{index + 1} / {title}</span></div>
-            <ul>{items.map(item => <li key={item}>{item}</li>)}</ul>
-          </div>)}
-        </div>
-      </section>
       <section className="section shell education-section" id="education" aria-labelledby="education-title">
-        <div className="section-head"><div><div className="index">04 / Education</div><h2 id="education-title">Where I’ve<br />studied.</h2></div></div>
+        <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Where I’ve<br />studied.</h2></div></div>
         <div className="education-grid">
           <article className="education-card">
             <div className="education-card-top"><span className="index">01 / University</span><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div></div>
@@ -103,6 +94,15 @@ export default function App() {
             <div className="education-coursework"><span>Relevant coursework</span><ul><li>Object-oriented programming</li><li>Data structures</li><li>Relational databases</li><li>Web development</li></ul></div>
             <div className="education-card-bottom"><span>Completed</span><span>Apr 2023</span></div>
           </article>
+        </div>
+      </section>
+      <section className="section shell" id="skills" aria-labelledby="skills-title">
+        <div className="section-head"><div><div className="index">04 / Skills</div><h2 id="skills-title">Skills &amp;<br />tools.</h2></div><p className="section-note">Technologies I’ve used in projects, coursework, and work.</p></div>
+        <div className="skills-grid">
+          {skillGroups.map(({ title, items }, index) => <div className="skill-group" key={title}>
+            <h3 className="index">0{index + 1} / {title}</h3>
+            <ul>{items.map(item => <li key={item}>{item}</li>)}</ul>
+          </div>)}
         </div>
       </section>
       <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">05 / Contact</div><h2 id="contact-title">Say<br />hello.</h2><p className="contact-note">Have a project or a question? I’d like to hear from you.</p></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com"><Icon name="mail" /> Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
