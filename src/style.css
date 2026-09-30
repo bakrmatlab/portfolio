@@ -57,16 +57,18 @@
 .section-head{margin-bottom:clamp(36px,4.5vw,56px)}
 .section-note{margin-top:24px}
 .about-grid{grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);gap:clamp(40px,6vw,96px);align-items:start}
-.fact:first-child{padding-top:0}
+.fact{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:center;min-height:72px;padding:20px 0}
+.fact span:first-child{white-space:nowrap}
+.fact span:last-child{line-height:1.45}
 .skill-group{padding-bottom:4px}
 .skill-group h3{margin:0;font-weight:400}
 .skill-group ul{margin-top:22px}
 .education-card{gap:clamp(24px,3vw,36px)}
 .contact{align-items:center}
-.contact-links{max-width:440px}
+.contact-links{display:grid;grid-template-columns:repeat(3,max-content);max-width:none;gap:12px}
 .contact-links .button{margin:0}
 .button:focus-visible,nav a:focus-visible,.brand:focus-visible,.footer a:focus-visible,.fact a:focus-visible{outline:2px solid #dfff43;outline-offset:4px}
-@media(max-width:1000px){
+@media(max-width:1100px){
   .contact{display:block}
   .contact-links{max-width:none;justify-content:flex-start;margin-top:36px}
 }
@@ -76,6 +78,7 @@
   .section-head{margin-bottom:36px}
   .section h2{font-size:clamp(48px,13vw,72px)}
   .contact-links{margin-top:30px}
+  .contact-links{grid-template-columns:1fr;width:100%;max-width:360px}
   .contact-links .button{min-width:150px}
 }
 @media(max-width:380px){.contact-links .button{width:100%}}
@@ -83,6 +86,7 @@
 /* Technical edge details */
 .section{position:relative}
 .section::before{content:'';position:absolute;top:-1px;left:0;width:42px;height:3px;background:#dfff43}
+#about::before{display:none}
 .education-section::before,.contact::before{width:108px;height:7px}
 .section-rail{position:absolute;top:clamp(72px,8vw,112px);right:-22px;writing-mode:vertical-rl;color:#899384;font:10px 'DM Mono',monospace;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}
 .section-head{position:relative}
@@ -98,3 +102,34 @@
   .section-head .section-note{margin-right:0}
   .work-card::after{display:none}
 }
+
+/* A varied hierarchy for supporting sections */
+#about h2{font-size:clamp(48px,6vw,88px)}
+#education h2,#skills h2{font-size:clamp(44px,5vw,72px);line-height:1;letter-spacing:-.065em}
+#education .section-head,#skills .section-head{margin-bottom:40px}
+.education-coursework ul{display:grid;gap:10px}
+.education-coursework li{border:0;padding:0 0 0 15px;position:relative;font-family:inherit;font-size:15px;line-height:1.4;color:#c4cdbe}
+.education-coursework li::before{content:'';position:absolute;left:0;top:.55em;width:4px;height:4px;background:#dfff43}
+.education-details{flex:1}
+.education-card-bottom{margin-top:0}
+.skill-group h3{display:flex;align-items:center;gap:12px}
+.skill-group h3 .icon{width:20px;height:20px}
+.skill-group ul{gap:10px 24px}
+.skill-group li{border:0;padding:0;margin:0;line-height:1.6;color:#c4cdbe}
+.orb{animation:orbit-turn 90s linear infinite}
+@keyframes orbit-turn{from{transform:rotate(-18deg)}to{transform:rotate(342deg)}}
+#about .section-head::after,#skills .section-head::before{display:none}
+#skills .section-head::after{top:3px;width:60px;height:14px}
+#education .section-head::before{top:auto;bottom:4px}
+#education .section-head::after{display:none}
+#education .section-rail{top:auto;bottom:clamp(72px,8vw,112px)}
+@media(max-width:600px){
+  .fact{grid-template-columns:96px minmax(0,1fr);gap:12px}
+  .hero-copy{padding:48px 0 48px}
+  .actions{margin-top:24px}
+  #about h2{font-size:clamp(46px,12vw,64px)}
+  #education h2,#skills h2{font-size:clamp(40px,10.5vw,56px)}
+  #education .section-head,#skills .section-head{margin-bottom:32px}
+  #skills .section-head::after{width:31px;height:8px}
+}
+@media(prefers-reduced-motion:reduce){.orb{animation:none}html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}

@@ -9,10 +9,13 @@ const skillGroups = [
   { title: 'Tools & platforms', items: ['Git', 'Docker', 'Linux', 'Cloudflare', 'Vercel'] },
 ]
 
-type IconName = 'school' | 'code' | 'github' | 'mail' | 'linkedin'
+type IconName = 'school' | 'code' | 'github' | 'mail' | 'linkedin' | 'layers' | 'database' | 'terminal'
 
 function Icon({ name }: { name: IconName }) {
   const paths: Record<IconName, ReactNode> = {
+    layers: <><path d="m3 7 9-5 9 5-9 5-9-5Zm0 5 9 5 9-5M3 17l9 5 9-5" /></>,
+    database: <><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></>,
+    terminal: <><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m6 9 3 3-3 3M12 15h5" /></>,
     school: <><path d="m2 9 10-5 10 5-10 5-10-5Z" /><path d="M6 11v5c0 2 3 4 6 4s6-2 6-4v-5M22 9v7" /></>,
     code: <><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></>,
     github: <><path d="M9 19c-4 1-4-2-6-2m12 4v-3.2a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6A4.7 4.7 0 0 0 18.4 6 4.3 4.3 0 0 0 18.3 3S17 2.7 15 4.3a11 11 0 0 0-6 0C7 2.7 5.7 3 5.7 3A4.3 4.3 0 0 0 5.6 6a4.7 4.7 0 0 0-1.3 3.5c0 4.7 2.8 5.7 5.5 6A3 3 0 0 0 9 17.8V21" /></>,
@@ -100,7 +103,7 @@ export default function App() {
         <div className="section-head"><div><div className="index">04 / Skills</div><h2 id="skills-title">Skills &amp;<br />tools.</h2></div><p className="section-note">Technologies I’ve used in projects, coursework, and work.</p></div>
         <div className="skills-grid">
           {skillGroups.map(({ title, items }, index) => <div className="skill-group" key={title}>
-            <h3 className="index">0{index + 1} / {title}</h3>
+            <h3 className="index"><Icon name={(['code', 'layers', 'database', 'terminal'] as const)[index]} />{title}</h3>
             <ul>{items.map(item => <li key={item}>{item}</li>)}</ul>
           </div>)}
         </div>
