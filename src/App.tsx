@@ -47,7 +47,7 @@ export default function App() {
         <div className="hero-art" aria-hidden="true"><div className="art-label">BAKR MATLAB / PORTFOLIO</div><div className="orb" /><div className="art-number">B</div><div className="corner">OTTAWA, CANADA / 2026</div></div>
       </section>
       <div className="ticker" aria-hidden="true"><div className="ticker-inner">{[0, 1].map(group => <div className="ticker-group" key={group}>{Array.from({ length: 4 }, (_, repeat) => tickerItems.map((item, index) => <span key={`${repeat}-${index}`}>{item}</span>))}</div>)}</div></div>
-      <section className="section shell" id="about" aria-labelledby="about-title">
+      <section className="section shell" id="about" aria-labelledby="about-title"><span className="section-rail" aria-hidden="true">01 // Profile</span>
         <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">A little<br />about me.</h2></div></div>
         <div className="about-grid">
           <p className="about-copy">I studied programming at Algonquin and now study computer science at Carleton. Outside class, I build projects like <em>MoneyPal</em>.</p>
@@ -58,7 +58,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="section shell" id="work" aria-labelledby="work-title">
+      <section className="section shell" id="work" aria-labelledby="work-title"><span className="section-rail" aria-hidden="true">02 // Selected work</span>
         <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">What I’ve<br />built.</h2></div><p className="section-note">A closer look at one project I’ve taken from idea to working app.</p></div>
         <article className="work-card money-pal-card">
           <div className="work-copy">
@@ -79,7 +79,7 @@ export default function App() {
           </div>
         </article>
       </section>
-      <section className="section shell education-section" id="education" aria-labelledby="education-title">
+      <section className="section shell education-section" id="education" aria-labelledby="education-title"><span className="section-rail" aria-hidden="true">03 // Education</span>
         <div className="section-head"><div><div className="index">03 / Education</div><h2 id="education-title">Where I’ve<br />studied.</h2></div></div>
         <div className="education-grid">
           <article className="education-card">
@@ -96,7 +96,7 @@ export default function App() {
           </article>
         </div>
       </section>
-      <section className="section shell" id="skills" aria-labelledby="skills-title">
+      <section className="section shell" id="skills" aria-labelledby="skills-title"><span className="section-rail" aria-hidden="true">04 // Toolkit</span>
         <div className="section-head"><div><div className="index">04 / Skills</div><h2 id="skills-title">Skills &amp;<br />tools.</h2></div><p className="section-note">Technologies I’ve used in projects, coursework, and work.</p></div>
         <div className="skills-grid">
           {skillGroups.map(({ title, items }, index) => <div className="skill-group" key={title}>
@@ -105,7 +105,7 @@ export default function App() {
           </div>)}
         </div>
       </section>
-      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><div><div className="index">05 / Contact</div><h2 id="contact-title">Say<br />hello.</h2><p className="contact-note">Have a project or a question? I’d like to hear from you.</p></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com"><Icon name="mail" /> Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
+      <section className="section shell contact" id="contact" aria-labelledby="contact-title"><span className="section-rail" aria-hidden="true">05 // Connection</span><div><div className="index">05 / Contact</div><h2 id="contact-title">Say<br />hello.</h2><p className="contact-note">Have a project or a question? I’d like to hear from you.</p></div><div className="contact-links"><a className="button primary" href="mailto:matlab893@gmail.com"><Icon name="mail" /> Email me <span aria-hidden="true">↗</span></a><a className="button secondary" href="https://www.linkedin.com/in/bakr-matlab/" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn <span aria-hidden="true">↗</span></a><ExternalLink className="button secondary"><Icon name="github" /> GitHub <span aria-hidden="true">↗</span></ExternalLink></div></section>
     </main>
     <footer className="footer shell"><span>© {new Date().getFullYear()} Bakr Matlab</span><span>Built by Bakr</span><a href="#top">Back to top ↑</a></footer>
   </>
