@@ -79,7 +79,7 @@ export default function App() {
           <article className="education-card">
             <div className="education-card-top"><span className="index">01 / University</span><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div></div>
             <div className="education-details"><h3>Carleton University</h3><p>Bachelor of Computer Science <span>· Cybersecurity stream</span></p></div>
-            <div className="education-coursework"><span>Year 2 curriculum</span><ul><li>Systems Programming</li><li>Data Types &amp; Algorithms</li><li>Software Engineering</li><li>Web Applications</li></ul></div>
+            <div className="education-coursework"><span>Relevant coursework</span><ul><li>Systems Programming</li><li>Data Types &amp; Algorithms</li><li>Software Engineering</li><li>Web Applications</li></ul></div>
             <div className="education-card-bottom"><span>Current</span><span>Expected Apr 2029</span></div>
           </article>
           <article className="education-card">
