@@ -24,6 +24,9 @@
 .education-details h3{font-size:clamp(23px,2.4vw,34px);line-height:1.1;letter-spacing:-.05em;margin:0 0 10px;font-weight:600}
 .education-details p{font-size:16px;color:#b9c0b2;margin:0;line-height:1.45}
 .education-details p span{color:#929b8e}
+.education-coursework>span{display:block;margin-bottom:12px;color:#929b8e;font:12px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+.education-coursework ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.education-coursework li{border:1px solid #494d43;padding:7px 9px;color:#c4cdbe;font:12px 'DM Mono',monospace}
 .education-card-bottom{border-top:1px solid #494d43;padding-top:16px;display:flex;justify-content:space-between;gap:16px;font:12px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em;color:#929b8e}
 .education-card-bottom span{color:#dfff43}
 @media(max-width:720px){.education-grid{grid-template-columns:1fr}.education-card{gap:26px}}

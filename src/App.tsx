@@ -44,7 +44,7 @@ export default function App() {
       <section className="section shell" id="about" aria-labelledby="about-title">
         <div className="section-head"><div><div className="index">01 / About</div><h2 id="about-title">A little<br />about me.</h2></div></div>
         <div className="about-grid">
-          <p className="about-copy">I started in Computer Programming at Algonquin, where I worked with applications and databases. Now I’m in Carleton’s cybersecurity stream. Projects like <em>MoneyPal</em> give me room to put what I learn into practice.</p>
+          <p className="about-copy">I studied programming at Algonquin and now study computer science at Carleton. Outside class, I build projects like <em>MoneyPal</em>.</p>
           <div className="fact-list">
             <div className="fact"><span><Icon name="school" /> Studying</span><span>Computer science at Carleton</span></div>
             <div className="fact"><span><Icon name="code" /> Interests</span><span>Software, systems, and security</span></div>
@@ -79,11 +79,13 @@ export default function App() {
           <article className="education-card">
             <div className="education-card-top"><span className="index">01 / University</span><div className="education-logo"><img src="/carleton.jpg" alt="Carleton University logo" loading="lazy" /></div></div>
             <div className="education-details"><h3>Carleton University</h3><p>Bachelor of Computer Science <span>· Cybersecurity stream</span></p></div>
+            <div className="education-coursework"><span>Year 2 curriculum</span><ul><li>Systems Programming</li><li>Data Types &amp; Algorithms</li><li>Software Engineering</li><li>Web Applications</li></ul></div>
             <div className="education-card-bottom"><span>Current</span><span>Expected Apr 2029</span></div>
           </article>
           <article className="education-card">
             <div className="education-card-top"><span className="index">02 / College</span><div className="education-logo"><img src="/algonquin-wordmark.svg" alt="Algonquin College logo" loading="lazy" /></div></div>
             <div className="education-details"><h3>Algonquin College</h3><p>Computer Programming Diploma</p></div>
+            <div className="education-coursework"><span>Relevant coursework</span><ul><li>Object-oriented programming</li><li>Data structures</li><li>Relational databases</li><li>Web development</li></ul></div>
             <div className="education-card-bottom"><span>Completed</span><span>Apr 2023</span></div>
           </article>
         </div>
