@@ -16,6 +16,11 @@
 @media(max-width:600px){.ticker-group span{gap:28px;margin-right:28px}}
 @media(prefers-reduced-motion:reduce){.ticker-inner{animation:none;transform:none}}
 .education-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.skills-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px}
+.skill-group{border-top:1px solid #494d43;padding:22px 0 8px}
+.skill-group ul{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.skill-group li{border:1px solid #494d43;padding:10px 13px;color:#e9ede6;font:13px 'DM Mono',monospace}
+@media(max-width:720px){.skills-grid{grid-template-columns:1fr;gap:24px}.skill-group ul{margin-top:20px}}
 .education-card{min-width:0;padding:28px;border:1px solid #494d43;background:#1a1d1b;display:flex;flex-direction:column;gap:36px;transition:border-color .2s}
 .education-card:hover{border-color:#dfff43}
 .education-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
@@ -32,13 +37,13 @@
 @media(max-width:720px){.education-grid{grid-template-columns:1fr}.education-card{gap:26px}}
 @media(max-width:600px){.education-card{padding:20px}.education-logo{width:116px;height:48px}.education-details h3{font-size:25px}.education-card-bottom{flex-wrap:wrap}}
 
-@media(max-width:600px){
+@media(max-width:780px){
   .top{height:auto;min-height:68px;flex-wrap:wrap;padding:18px 0;gap:18px}
   .top nav{width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;font-size:12px;letter-spacing:.03em}
-  .top nav a{grid-column:span 2;min-height:44px;border:1px solid #494d43;display:flex;align-items:center;justify-content:center}
-  .top nav a:nth-child(n+4){grid-column:span 3}
+  .top nav a{min-height:44px;border:1px solid #494d43;display:flex;align-items:center;justify-content:center}
   .top nav a:hover{border-color:#dfff43}
 }
+@media(max-width:600px){.top nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 .icon{width:18px;height:18px;flex:none}
 .fact span:first-child{display:inline-flex;align-items:center;gap:10px}
