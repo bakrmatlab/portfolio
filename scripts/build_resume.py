@@ -80,6 +80,7 @@ for label,value in [
 ('Programming Languages','TypeScript, JavaScript, Java, Python, SQL'),
 ('Frameworks','React, Next.js, React Native, Spring Boot, Express'),
 ('Backend Development','Node.js, REST APIs, GraphQL, Convex, Clerk'),
+('Browser Extensions','Chrome Manifest V3, Gmail API'),
 ('Databases','PostgreSQL, MySQL, Oracle, SQLite, Supabase'),
 ('DevOps &amp; Tools','Git, Docker, GitHub Actions, Linux, Cloudflare, Vercel, Jira, Postman')]:
  table=Table([[p(f'<b>{label} |</b>'),p(value)]],colWidths=[145,371])
