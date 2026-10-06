@@ -133,3 +133,10 @@
   #skills .section-head::after{width:31px;height:8px}
 }
 @media(prefers-reduced-motion:reduce){.orb{animation:none}html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+
+.otpguard-card{margin-top:24px;min-height:520px}
+.otpguard-card .work-copy{gap:40px}
+.otpguard-visual{background:#171d19}
+.otpguard-visual .preview-window img{object-fit:contain;object-position:center;background:#080d09}
+@media(max-width:900px){.otpguard-card{grid-template-columns:1fr}.otpguard-visual{grid-row:1;min-height:360px}}
+@media(max-width:600px){.otpguard-visual{min-height:250px}.otpguard-card .work-copy{min-height:0;gap:32px}}

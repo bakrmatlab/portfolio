@@ -62,7 +62,7 @@ export default function App() {
         </div>
       </section>
       <section className="section shell" id="work" aria-labelledby="work-title"><span className="section-rail" aria-hidden="true">02 // Selected work</span>
-        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">What I’ve<br />built.</h2></div><p className="section-note">A closer look at one project I’ve taken from idea to working app.</p></div>
+        <div className="section-head"><div><div className="index">02 / Work</div><h2 id="work-title">What I’ve<br />built.</h2></div><p className="section-note">Projects I’ve taken from idea to working software.</p></div>
         <article className="work-card money-pal-card">
           <div className="work-copy">
             <div className="index">01 / Personal project</div>
@@ -79,6 +79,24 @@ export default function App() {
           <div className="work-visual money-pal-visual">
             <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>MoneyPal / live homepage</span></div>
             <div className="preview-window"><img src="/moneypal-homepage.jpg" alt="Screenshot of the MoneyPal homepage" loading="lazy" /></div>
+          </div>
+        </article>
+        <article className="work-card otpguard-card">
+          <div className="work-copy">
+            <div className="index">02 / Personal project</div>
+            <div>
+              <h3>OTPGuard</h3>
+              <p>A Chrome extension that finds recent Gmail verification codes and fills them when you choose. I built the extension and its companion website, with guided setup, website permissions, and local controls for preferences and activity.</p>
+              <div className="project-tags" aria-label="Technologies used"><span>TypeScript</span><span>React</span><span>Next.js</span><span>Chrome MV3</span><span>Gmail API</span><span>Convex</span></div>
+              <div className="project-actions">
+                <a className="button primary" href="https://otpguard.net/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+                <a className="button secondary" href="https://github.com/bakrmatlab/OTPGuard" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+          <div className="work-visual money-pal-visual otpguard-visual">
+            <div className="preview-bar" aria-hidden="true"><span className="preview-dots"><i /><i /><i /></span><span>OTPGuard / live homepage</span></div>
+            <div className="preview-window"><img src="/otpguard-homepage.jpg" alt="OTPGuard homepage showing its Find the code, Choose Fill interface" loading="lazy" /></div>
           </div>
         </article>
       </section>
